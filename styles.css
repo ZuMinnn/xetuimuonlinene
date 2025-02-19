@@ -29,6 +29,23 @@ body {
     color: #d81b60;
     margin-bottom: 15px;
   }
+h3.rainbow-text {
+    font-size: 20px; /* Điều chỉnh kích thước phù hợp */
+    font-weight: bold;
+    text-align: center;
+    background: linear-gradient(90deg, red, orange, yellow, green, pink, violet);
+    background-size: 300%;
+    -webkit-background-clip: text;
+    color: transparent;
+    animation: rainbow 8s linear infinite;
+  }
+  
+  @keyframes rainbow {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+
   
   /* ---------- Game Area ---------- */
   .game-area {
