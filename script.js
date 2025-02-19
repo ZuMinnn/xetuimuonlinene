@@ -100,7 +100,7 @@ document.addEventListener("DOMContentLoaded", function() {
     
     babyImg.addEventListener("click", function() {
       
-      window.location.href = "https://example.com";
+      window.location.href = "https://zuminnn.github.io/Wheel/";
     });
   });
   
