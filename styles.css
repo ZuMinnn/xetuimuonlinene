@@ -1,0 +1,144 @@
+/* ---------- Animated Gradient Background ---------- */
+body {
+    margin: 0;
+    font-family: 'Comic Sans MS', cursive, sans-serif;
+    background: linear-gradient(45deg, #ff9a9e, #fad0c4, #fbc2eb, #a18cd1);
+    background-size: 400% 400%;
+    animation: gradientBG 15s ease infinite;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  @keyframes gradientBG {
+    0% { background-position: 0% 50%; }
+    50% { background-position: 100% 50%; }
+    100% { background-position: 0% 50%; }
+  }
+  
+  /* ---------- Container Styles ---------- */
+  .game-container {
+    text-align: center;
+    background: rgba(255, 255, 255, 0.9);
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    color: #d81b60;
+    margin-bottom: 15px;
+  }
+  
+  /* ---------- Game Area ---------- */
+  .game-area {
+    position: relative;
+    margin: 0 auto;
+    width: 530px;
+    height: 500px;
+    border: 2px dashed #f06292;
+    border-radius: 15px;
+    background-color: #fff;
+    overflow: hidden;
+  }
+  
+  /* ---------- Image Styles ---------- */
+  .game-area img {
+    width: 450px;
+    height: 450px;
+    object-fit: contain;
+    cursor: pointer;
+    display: block;
+    margin: 0 auto;
+    transition: transform 0.3s ease;
+  }
+  
+  .game-area img:hover {
+    transform: scale(1.05);
+  }
+  
+  /* ---------- Message Styles ---------- */
+  .message {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    color: #d81b60;
+    font-size: 20px;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  
+  /* ---------- Shake Animation ---------- */
+  @keyframes shake {
+    0% { transform: translate(0, 0); }
+    10% { transform: translate(-3px, 3px); }
+    20% { transform: translate(3px, -3px); }
+    30% { transform: translate(-3px, 3px); }
+    40% { transform: translate(3px, -3px); }
+    50% { transform: translate(-3px, 3px); }
+    60% { transform: translate(3px, -3px); }
+    70% { transform: translate(-3px, 3px); }
+    80% { transform: translate(3px, -3px); }
+    90% { transform: translate(-3px, 3px); }
+    100% { transform: translate(0, 0); }
+  }
+  
+  .shake {
+    animation: shake 0.5s;
+  }
+  
+  /* ---------- Slide-Out Animation for Box ---------- */
+  @keyframes slideOut {
+    from { transform: translateX(0); opacity: 1; }
+    to { transform: translateX(120%); opacity: 0; }
+  }
+  
+  .slide-out {
+    animation: slideOut 0.8s forwards;
+  }
+  
+  /* ---------- Tear Animation for Bag ---------- */
+  @keyframes tear {
+    0% { transform: scale(1) rotate(0deg); opacity: 1; }
+    30% { transform: scale(1.05) rotate(2deg); opacity: 0.8; }
+    50% { transform: scale(0.95) rotate(-2deg); opacity: 0.7; }
+    70% { transform: scale(1.05) rotate(2deg); opacity: 0.8; }
+    100% { transform: scale(0) rotate(15deg); opacity: 0; }
+  }
+  
+  .tear {
+    animation: tear 0.8s forwards;
+  }
+  
+  /* ---------- Sparkle Animation for Baby Three ---------- */
+  @keyframes sparkle {
+    0% { transform: scale(0.8); opacity: 0; filter: drop-shadow(0 0 10px gold); }
+    50% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 20px gold); }
+    100% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 10px gold); }
+  }
+  
+  .sparkle {
+    animation: sparkle 1s ease-out;
+  }
+  
+img {
+    -webkit-tap-highlight-color: transparent; 
+    outline: none;
+    user-select: none;
+  }
+  
+  
+  #bag {
+    -webkit-tap-highlight-color: transparent;
+    outline: none;
+    user-select: none;
+  }
+  
