@@ -136,9 +136,9 @@ h3.rainbow-text {
   
   /* ---------- Sparkle Animation for Baby Three ---------- */
   @keyframes sparkle {
-    0% { transform: scale(0.8); opacity: 0; filter: drop-shadow(0 0 10px gold); }
-    50% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 20px gold); }
-    100% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 10px gold); }
+    0% { transform: scale(0.8); opacity: 0; filter: drop-shadow(0 0 10px pink); }
+    50% { transform: scale(1.2); opacity: 1; filter: drop-shadow(0 0 20px pink); }
+    100% { transform: scale(1); opacity: 1; filter: drop-shadow(0 0 10px pink); }
   }
   
   .sparkle {
